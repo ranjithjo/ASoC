@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<body>
+    <div class="tab-pane fade shadow rounded bg-white p-5" id="issueDetails" role="tabpanel"
+        aria-labelledby="pills-issue-details-tab">
+        <h4 class="font-italic mb-4">Issue Details</h4>
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <td><span class="font-italic text-muted mb-2 fw-bold">Issues:
+                        </span>{{data.LatestExecution.NIssuesFound}}</td>
+                    <td><span class="font-italic text-muted mb-2 fw-bold">Result: </span>{{data.LatestExecution.Result}}
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="font-italic text-muted mb-2 fw-bold">Critical:
+                        </span>{{data.LatestExecution.NCriticalIssues}}</td>
+                    <td><span class="font-italic text-muted mb-2 fw-bold">High:
+                        </span>{{data.LatestExecution.NHighIssues}}</td>
+                </tr>
+                <tr>
+                    <td><span class="font-italic text-muted mb-2 fw-bold">Medium:
+                        </span>{{data.LatestExecution.NMediumIssues}}</td>
+                    <td><span class="font-italic text-muted mb-2 fw-bold">Low:
+                        </span>{{data.LatestExecution.NLowIssues}}</td>
+                </tr>
+                <tr>
+                    <td><span class="font-italic text-muted mb-2 fw-bold">Informational:
+                        </span>{{data.LatestExecution.NInfoIssues}}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>

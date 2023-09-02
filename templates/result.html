@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light">ASOC Dashboard</a>
+        </div>
+    </nav>
+    <section class="py-5 header">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Tabs nav -->
+                    <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link mb-3 p-3 shadow active" id="pills-scan-details-tab" data-toggle="pill"
+                            href="#scanDetails" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                            <i class="fa fa-free-code-camp mr-2"></i>
+                            <span class="font-weight-bold small text-uppercase">Scan Details</span></a>
+
+                        <a class="nav-link mb-3 p-3 shadow" id="pills-app-details-tab" data-toggle="pill"
+                            href="#appDetails" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <i class="fa fa-desktop mr-2"></i>
+                            <span class="font-weight-bold small text-uppercase">Application Details</span></a>
+
+                        <a class="nav-link mb-3 p-3 shadow" id="pills-issue-details-tab" data-toggle="pill"
+                            href="#issueDetails" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <i class="fa fa-exclamation-triangle mr-2"></i>
+                            <span class="font-weight-bold small text-uppercase">Issue Details</span></a>
+
+                        <a class="nav-link mb-3 p-3 shadow" id="pills-user-details-tab" data-toggle="pill"
+                            href="#userDetails" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                            <i class="fa fa-user-circle-o mr-2"></i>
+                            <span class="font-weight-bold small text-uppercase">User Details</span></a>
+
+                        <a class="nav-link mb-3 p-3 shadow" id="pills-other-details-tab" data-toggle="pill"
+                            href="#otherDetails" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                            <i class="fa fa-cog mr-2"></i>
+                            <span class="font-weight-bold small text-uppercase">Other Details</span></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        {% include 'scanDetails.html' %}
+                        {% include 'appDetails.html' %}
+                        {% include 'issueDetails.html' %}
+                        {% include 'userDetails.html' %}
+                        {% include 'otherDetails.html' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
