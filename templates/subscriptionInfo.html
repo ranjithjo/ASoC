@@ -1,0 +1,36 @@
+<html>
+
+<body>
+  <div class="card">
+    <div class="d-flex flex-row flex-wrap bd-highlight card-body">
+      <table class="table table-borderless table-info">
+        <tbody>
+          {% for subscription in data.Subscriptions %}
+          <tr>
+            <td><span class="fw-bold">Subscription Id: </span>{{subscription.SubscriptionId}}</td>
+            <td><span class="fw-bold">Subscription Id: </span>{{subscription.SubscriptionId}}</td>
+            <td><span class="fw-bold">Offering Type: </span>{{subscription.OfferingType}}</td>
+          </tr>
+          <tr>
+            <td><span class="fw-bold">Full Report: </span>{{subscription.FullReport}}</td>
+            <td><span class="fw-bold">Max Concurrent Scans</span>: </span>{{subscription.MaxConcurrentScans}}</td>
+            <td><span class="fw-bold">Purchase Date: </span>{{subscription.PurchaseDate}}</td>
+          </tr>
+          <tr>
+            <td><span class="fw-bold">Expiration Date: </span>{{subscription.ExpirationDate}}</td>
+            <td><span class="fw-bold">Renewal Date: </span>{{subscription.RenewalDate}}</td>
+            <td><span class="fw-bold">Max Concurrent Scans: </span>{{subscription.MaxConcurrentScans}}</td>
+          </tr>
+          {% endfor %}
+          <tr>
+            <td><span class="fw-bold">Max Scans Per App: </span>{{data.MaxScansPerApp}}</td>
+            <td><span class="fw-bold">Apps With Business Unit: </span>{{data.AppsWithBusinessUnit}}</td>
+            <td><span class="fw-bold">Apps Without Business Unit: </span>{{data.AppsWithoutBusinessUnit}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

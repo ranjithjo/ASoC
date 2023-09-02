@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <div class="tab-pane fade shadow rounded bg-white show active p-5" id="scanDetails" role="tabpanel" aria-labelledby="pills-scan-details-tab">
+            <h4 class="font-italic mb-4">Scan Details</h4>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Scan ID: </span>{{data.Id}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Scan Name: </span>{{data.Name}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Technology: </span>{{data.Technology}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Scan Url: </span>{{data.Url}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Created at: </span>{{data.CreatedAt}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Last Modified: </span>{{data.LastModified}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold ">Execution Duration(Sec): </span>{{data.LatestExecution.ExecutionDurationSec}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Execution Progress: </span>{{data.LatestExecution.ExecutionProgress}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Status: </span>{{data.LatestExecution.Status}}</p>
+        </div>
+    </body>
+</html>

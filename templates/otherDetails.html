@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <div class="tab-pane fade shadow rounded bg-white p-5" id="otherDetails" role="tabpanel" aria-labelledby="pills-other-details-tab">
+            <h4 class="font-italic mb-4">Other Details</h4>
+             <p><span class="font-italic text-muted mb-2 fw-bold">Scan File Available: </span>{{data.LatestExecution.IsScanFileAvailable}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Enablement Message: </span>{{data.LatestExecution.EnablementMessage}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">HandledBy Scan Enabler: </span>{{data.LatestExecution.HandledByScanEnabler}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Comment: </span>{{data.LatestExecution.Comment}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Test Optimization Level: </span>{{data.TestOptimizationLevel}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Demo Scan: </span>{{data.IsDemoScan}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Private: </span>{{data.IsPrivate}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">Personal: </span>{{data.IsPersonal}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">OpenSource Licenses: </span>{{data.LatestExecution.NOpenSourceLicenses}}</p>
+            <p><span class="font-italic text-muted mb-2 fw-bold">OpenSource Packages: </span>{{data.LatestExecution.NOpenSourcePackages}}</p>
+        </div>
+    </body>
+</html>
