@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request
+from flask import Flask as flask_225, render_template, request
 import requests
 import json
 import generateToken
 
-app = Flask(__name__)
+app = flask_225(__name__)
 token=generateToken.generateToken()
 
 # For getting tenant details
